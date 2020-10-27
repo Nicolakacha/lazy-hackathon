@@ -1,13 +1,8 @@
 $(function(){
-
-// 部分程式碼來自：[lodash](https://github.com/lodash/lodash)
-
-/** Used to compose bitmasks for cloning. */
 const CLONE_DEEP_FLAG = 1
 const CLONE_FLAT_FLAG = 2
 const CLONE_SYMBOLS_FLAG = 4
 
-/** `Object#toString` result references. */
 const argsTag = '[object Arguments]'
 const arrayTag = '[object Array]'
 const boolTag = '[object Boolean]'
@@ -523,5 +518,7 @@ function baseClone(value, bitmask, customizer, key, object, stack) {
     }
 
   }
+
+  var lazyLoadInstance = new LazyLoad({});
 });
 
